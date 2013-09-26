@@ -1,4 +1,3 @@
-cuirass
-=======
+# Cuirass
 
 UI Components.
