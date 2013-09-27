@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    Flag
+\*------------------------------------*/
+/**
+ * Flag
+ * @see http://csswizardry.com/2013/05/the-flag-object/
+ */
+.Flag-image {
+  display: table-cell;
+  padding-right: 10px;
+}
+.Flag-image > img {
+  display: block;
+}
+
+.Flag-image,
+.Flag-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.Flag--top .Flag-image, .Flag--top
+.Flag-body {
+  vertical-align: top;
+}
+.Flag--bottom .Flag-image, .Flag--bottom
+.Flag-body {
+  vertical-align: bottom;
+}
+
+.Flag-image {
+  padding-right: 10px;
+}
+.Flag-image > img {
+  display: block;
+}
+.Flag--rev .Flag-image {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.Flag-body {
+  width: 100%;
+}

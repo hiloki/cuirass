@@ -1,0 +1,114 @@
+/*------------------------------------*\
+    Button Group
+\*------------------------------------*/
+
+/**
+ * Button Group
+ * @require Button
+ *
+ * 1. Remove inter-child whitespace for all non-monospace font-families.
+ * 2. Protect against WebKit bug with optimizelegibility
+ * 3. Prevent wrapping across multiple lines.
+ */
+
+.ButtonGroup,
+.ButtonGroup--tab {
+  display: inline-block;
+  letter-spacing: -0.31em; /* 1 */
+  text-rendering: optimizespeed; /* 2 */
+  vertical-align: middle;
+  white-space: nowrap; /* 3 */
+}
+
+/**
+ * Button group item
+ *
+ * 1. Reset the text defaults altered in `ButtonGroup`.
+ * 2. Ensure that adjacent button borders slide over each other. Must match the
+ *    value of the button border width.
+ * 3. Provide a consistent vertical alignment and avoid vertical whitespace in
+ *    the component.
+ */
+
+.ButtonGroup-item {
+  display: inline-block;
+  letter-spacing: normal; /* 1 */
+  margin-left: -1px; /* 2 */
+  text-rendering: auto; /* 1 */
+  vertical-align: top; /* 3 */
+  word-spacing: normal; /* 1 */
+}
+
+.ButtonGroup-item:first-child {
+  margin-left: 0;
+}
+
+/**
+ * Ensure that interactions with a button make it sit on top of other buttons
+ * in the group.
+ */
+
+.ButtonGroup-item .Button:hover,
+.ButtonGroup-item .Button:focus,
+.ButtonGroup-item .Button:active,
+.ButtonGroup-item .Button.is-pressed {
+  z-index: 1;
+}
+
+/* Modifier: vertically stacked buttons
+   ========================================================================== */
+
+.ButtonGroup--vertical .ButtonGroup-item {
+  display: block;
+  margin-left: 0;
+  margin-top: -1px;
+}
+
+.ButtonGroup--vertical .Button {
+  display: block;
+  width: 100%;
+}
+
+/* Plugin: remove border radius from adjacent sides of `Button`
+   ========================================================================== */
+
+/**
+ * Remove the `border-radius` on adjacent sides of `Button` descendants.
+ *
+ * We can rely on these pseudo-class selectors because one of the `ButtonGroup`
+ * requirements is that it only contains `ButtonGroup-item` as children.
+ *
+ * All browsers that support `border-radius` also support `:not()`.
+ */
+
+.ButtonGroup:not(.ButtonGroup--vertical) .ButtonGroup-item:not(:first-child):not(:last-child) .Button {
+  border-radius: 0;
+}
+
+.ButtonGroup:not(.ButtonGroup--vertical) .ButtonGroup-item:first-child:not(:only-child) .Button {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ButtonGroup:not(.ButtonGroup--vertical) .ButtonGroup-item:last-child:not(:only-child) .Button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/**
+ * Appropriate removal of `border-radius` for vertically stacked buttons.
+ */
+
+.ButtonGroup--vertical .ButtonGroup-item:not(:first-child):not(:last-child) .Button {
+  border-radius: 0;
+}
+
+.ButtonGroup--vertical .ButtonGroup-item:first-child:not(:only-child) .Button {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ButtonGroup--vertical .ButtonGroup-item:last-child:not(:only-child) .Button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

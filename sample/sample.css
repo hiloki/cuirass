@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Volkhov:700);
+/*------------------------------------*\
+    Master
+\*------------------------------------*/
+/**
+ * For Component's HTML sample
+ */
+html {
+  padding-bottom: 40px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAZCAAAAACaphhzAAAAXElEQVR4Ae2RsQpDMRDD/P/f2lWFUohKKDc9nI5vqSEYDSaIiwpo7ShrLVQAvHDkvYM8d7hwHq9vaqduh1P/Hw7I8aV6DKd6DKd6TKduh3P0EPjt8r/LXXfZofYHzEMiu4gpf+kAAAAASUVORK5CYII=");
+  -webkit-background-size: 16px 12px;
+  background-size: 16px 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cuirass-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+.cuirass-name {
+  margin: 0.5em 1em;
+  font-size: 2.4em;
+  font-size: 5.8vw;
+  font-family: 'Volkhov', serif;
+}
+
+.cuirass-section-name {
+  margin: 0.5em 1em;
+  font-size: 1.6em;
+  font-size: 4.8vw;
+  font-family: 'Volkhov', serif;
+  color: #FFF;
+}
+
+.cuirass-canvas {
+  padding: 2em 1em;
+  box-shadow: 0 -1px 1px rgba(100, 100, 100, 0.1);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.cuirass-code {
+  margin: 0;
+  padding: 0.5em 0 2em 0;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.75);
+}

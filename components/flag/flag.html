@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flag</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/core/master.css">
+<link rel="stylesheet" href="/sample/sample.css">
+<link rel="stylesheet" href="/sample/prism.css">
+<link rel="stylesheet" href="flag.css">
+</head>
+<body>
+<h1 class="cuirass-name">
+<div class="cuirass-container">
+Flag
+</div>
+</h1>
+<div class="cuirass-canvas">
+<div class="cuirass-container">
+<div class="Flag mbl">
+	<div class="Flag-image">
+		<img src="/sample/holder.js/44x44/gray">
+	</div>
+	<div class="Flag-body">
+		<p class="large">Lorem ipsum dolor sit amet</p>
+	</div>
+</div>
+<div class="Flag Flag--top mbl">
+	<div class="Flag-image">
+		<img src="/sample/holder.js/44x44/gray">
+	</div>
+	<div class="Flag-body">
+		<p class="large">Lorem ipsum dolor sit amet</p>
+	</div>
+</div>
+<div class="Flag Flag--bottom mbl">
+	<div class="Flag-image">
+		<img src="/sample/holder.js/44x44/gray">
+	</div>
+	<div class="Flag-body">
+		<p class="large">Lorem ipsum dolor sit amet</p>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="cuirass-code">
+
+<h2 class="cuirass-section-name">
+<div class="cuirass-container">
+Markup
+</div>
+</h2>
+
+<pre class="cuirass-container"><code class="language-markup">&lt;div class=&quot;Flag mbl&quot;&gt;
+	&lt;div class=&quot;Flag-image&quot;&gt;
+		&lt;img src=&quot;/sample/holder.js/44x44/gray&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;Flag-body&quot;&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;Flag Flag--top&quot;&gt;
+	&lt;div class=&quot;Flag-image&quot;&gt;
+		&lt;img src=&quot;/sample/holder.js/44x44/gray&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;Flag-body&quot;&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;Flag Flag--bottom&quot;&gt;
+	&lt;div class=&quot;Flag-image&quot;&gt;
+		&lt;img src=&quot;/sample/holder.js/44x44/gray&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;Flag-body&quot;&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<h2 class="cuirass-section-name">
+<div class="cuirass-container">
+CSS
+</div>
+</h2>
+
+<pre class="cuirass-container"><code class="language-css">.Flag-image {
+  display: table-cell;
+  padding-right: 10px;
+}
+.Flag-image > img {
+  display: block;
+}
+
+.Flag-image,
+.Flag-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.Flag--top .Flag-image, .Flag--top
+.Flag-body {
+  vertical-align: top;
+}
+.Flag--bottom .Flag-image, .Flag--bottom
+.Flag-body {
+  vertical-align: bottom;
+}
+
+.Flag-image {
+  padding-right: 10px;
+}
+.Flag-image > img {
+  display: block;
+}
+.Flag--rev .Flag-image {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.Flag-body {
+  width: 100%;
+}</code></pre>
+</div>
+
+<script src="/sample/holder.min.js"></script>
+<!-- Syntax Highlight -->
+<script src="/sample/prism.min.js"></script>
+</body>
+</html>

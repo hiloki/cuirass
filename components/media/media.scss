@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    Media
+\*------------------------------------*/
+
+/**
+ * Media
+ */
+
+.Media {}
+
+.Media-image {
+  float: left;
+  margin-right: 10px;
+  .Media--rev & {
+    float: right;
+    margin-right: auto;
+    margin-left: 10px;
+  }
+}
+
+.Media-body {
+  overflow: hidden;
+  > img {
+  	display: block;
+  }
+}

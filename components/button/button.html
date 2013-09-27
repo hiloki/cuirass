@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Button</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/core/master.css">
+<link rel="stylesheet" href="/sample/sample.css">
+<link rel="stylesheet" href="/sample/prism.css">
+<link rel="stylesheet" href="button.css">
+</head>
+<body>
+<h1 class="cuirass-name">
+<div class="cuirass-container">
+Button
+</div>
+</h1>
+<div class="cuirass-canvas">
+<div class="cuirass-container">
+<div class="mbl">
+	<a class="Button" role="button" href="#url">Button text</a>
+</div>
+<div class="iCenter mbl">
+	<button class="Button mega" type="submit">Button text</button>
+</div>
+<div class="mbl">
+	<input class="Button Button--full" type="submit" value="Button text">
+</div>
+</div>
+</div>
+
+<div class="cuirass-code">
+
+<h2 class="cuirass-section-name">
+<div class="cuirass-container">
+Markup
+</div>
+</h2>
+
+<pre class="cuirass-container"><code class="language-markup">&lt;div&gt;
+	&lt;a class=&quot;Button&quot; role=&quot;button&quot; href=&quot;#url&quot;&gt;Button text&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;iCenter&quot;&gt;
+	&lt;button class=&quot;Button mega&quot; type=&quot;submit&quot;&gt;Button text&lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;input class=&quot;Button Button--full&quot; type=&quot;submit&quot; value=&quot;Button text&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 class="cuirass-section-name">
+<div class="cuirass-container">
+CSS
+</div>
+</h2>
+
+<pre class="cuirass-container"><code class="language-css"> .Button {
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.4em 0.75em;
+  border: 1px solid;
+  background: transparent;
+  color: inherit; 
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+ }
+
+ /**
+  * UI states
+  */
+
+.Button:hover,
+.Button:focus,
+.Button:active {
+  text-decoration: none;
+}
+
+.Button:disabled,
+.Button.is-disabled {
+  cursor: default;
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.Button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+</code></pre>
+</div>
+
+<script src="/sample/holder.min.js"></script>
+<!-- Syntax Highlight -->
+<script src="/sample/prism.min.js"></script>
+</body>
+</html>
