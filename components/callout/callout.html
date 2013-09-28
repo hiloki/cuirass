@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Callout</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/core/master.css">
+<link rel="stylesheet" href="/sample/sample.css">
+<link rel="stylesheet" href="/sample/prism.css">
+<link rel="stylesheet" href="callout.css">
+</head>
+<body>
+<h1 class="cuirass-name">
+<div class="cuirass-container">
+Callout
+</div>
+</h1>
+<div class="cuirass-canvas">
+<div class="cuirass-container">
+<div class="mbl">
+	<div class="Callout Callout--left">
+		<div class="Callout-content">
+			<p class="ptm prm pbm plm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</div>
+<div class="mbl">
+	<div class="Callout Callout--left Callout--left--small">
+		<div class="Callout-content">
+			<p class="pts prs pbs pls">Text</p>
+		</div>
+	</div>
+</div>
+<div class="mbl">
+	<div class="Callout Callout--top">
+		<div class="Callout-content">
+			<p class="ptm prm pbm plm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</div>
+<div class="mbl">
+	<div class="Callout Callout--top Callout--top--small">
+		<div class="Callout-content">
+			<p class="pts prs pbs pls">Text</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="cuirass-code">
+
+<h2 class="cuirass-section-name">
+<div class="cuirass-container">
+Markup
+</div>
+</h2>
+
+<pre class="cuirass-container"><code class="language-markup">&lt;div class=&quot;mbl&quot;&gt;
+	&lt;div class=&quot;Callout Callout--left&quot;&gt;
+		&lt;div class=&quot;Callout-content&quot;&gt;
+			&lt;p class=&quot;ptm prm pbm plm&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mbl&quot;&gt;
+	&lt;div class=&quot;Callout Callout--left Callout--left--small&quot;&gt;
+		&lt;div class=&quot;Callout-content&quot;&gt;
+			&lt;p class=&quot;pts prs pbs pls&quot;&gt;Text&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mbl&quot;&gt;
+	&lt;div class=&quot;Callout Callout--top&quot;&gt;
+		&lt;div class=&quot;Callout-content&quot;&gt;
+			&lt;p class=&quot;ptm prm pbm plm&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mbl&quot;&gt;
+	&lt;div class=&quot;Callout Callout--top Callout--top--small&quot;&gt;
+		&lt;div class=&quot;Callout-content&quot;&gt;
+			&lt;p class=&quot;pts prs pbs pls&quot;&gt;Text&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 class="cuirass-section-name">
+<div class="cuirass-container">
+CSS
+</div>
+</h2>
+
+<pre class="cuirass-container"><code class="language-css">.Callout {
+  position: relative;
+}
+
+.Callout-content {
+  background-color: #CCC;
+  &:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    border-style: solid;
+  }
+}
+
+.Callout--left {
+	padding-left: 12px;
+  .Callout-content {
+    &:before {
+      top: 50%;
+      left: 0;
+      margin-top: -12px;
+      border-width: 12px;
+      border-left-width: 0;
+      border-color: transparent #CCC;
+    }
+  }
+}
+
+.Callout--left--small {
+	padding-left: 6px;
+  .Callout-content {
+    &:before {
+      margin-top: -6px;
+      border-width: 6px;
+      border-left-width: 0;
+      border-color: transparent #CCC;
+    }
+  }
+}
+
+.Callout--top {
+	padding-top: 12px;
+  .Callout-content {
+    &:before {
+      left: 50%;
+      top: 0;
+      margin-left: -12px;
+      border-width: 12px;
+      border-top-width: 0;
+      border-color: #CCC transparent;
+    }
+  }
+}
+
+.Callout--top--small {
+	padding-top: 6px;
+  .Callout-content {
+    &:before {
+      margin-left: -6px;
+      border-width: 6px;
+      border-top-width: 0;
+      border-color: #CCC transparent;
+    }
+  }
+}</code></pre>
+</div>
+
+<script src="/sample/holder.min.js"></script>
+<!-- Syntax Highlight -->
+<script src="/sample/prism.min.js"></script>
+</body>
+</html>

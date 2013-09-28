@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    Callout
+\*------------------------------------*/
+
+/**
+ * Callout
+ */
+
+.Callout {
+  position: relative;
+}
+
+.Callout-content {
+  background-color: #CCC;
+  &:before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    border-style: solid;
+  }
+}
+
+.Callout--left {
+	padding-left: 12px;
+  .Callout-content {
+    &:before {
+      top: 50%;
+      left: 0;
+      margin-top: -12px;
+      border-width: 12px;
+      border-left-width: 0;
+      border-color: transparent #CCC;
+    }
+  }
+}
+
+.Callout--left--small {
+	padding-left: 6px;
+  .Callout-content {
+    &:before {
+      margin-top: -6px;
+      border-width: 6px;
+      border-left-width: 0;
+      border-color: transparent #CCC;
+    }
+  }
+}
+
+.Callout--top {
+	padding-top: 12px;
+  .Callout-content {
+    &:before {
+      left: 50%;
+      top: 0;
+      margin-left: -12px;
+      border-width: 12px;
+      border-top-width: 0;
+      border-color: #CCC transparent;
+    }
+  }
+}
+
+.Callout--top--small {
+	padding-top: 6px;
+  .Callout-content {
+    &:before {
+      margin-left: -6px;
+      border-width: 6px;
+      border-top-width: 0;
+      border-color: #CCC transparent;
+    }
+  }
+}
