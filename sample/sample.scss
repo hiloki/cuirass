@@ -23,6 +23,13 @@ html {
   max-width: 640px;
 }
 
+.cuirass-projectname {
+  margin: 0.5em 1em;
+  font-size: 3.6em;
+  font-family: 'Volkhov', serif;
+  text-align: center;
+}
+
 .cuirass-name {
   margin: 0.5em 1em;
   font-size: 2.4em;
@@ -47,4 +54,21 @@ html {
   padding: 0.5em 0 2em 0;
   box-shadow: 0 1px 1px rgba(255,255,255,0.9);
   background: rgba(0,0,0,0.75);
+}
+
+.cuirass-list {
+  box-shadow: 0 -1px 1px rgba(100,100,100,0.1);
+  background: rgba(255,255,255,0.75);
+  > li {
+    > a {
+      display: block;
+      padding: 0.3em 0.5em;
+      color: inherit;
+      font-size: 2.4em;
+      text-decoration: none;
+    }
+    & + li {
+      border-top: 1px solid #EEE;
+    }
+  }
 }

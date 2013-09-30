@@ -1,10 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Volkhov:700);
 /*------------------------------------*\
     Master
 \*------------------------------------*/
 /**
  * For Component's HTML sample
  */
-@import url(http://fonts.googleapis.com/css?family=Volkhov:700);
 html {
   padding-bottom: 40px;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAZCAAAAACaphhzAAAAXElEQVR4Ae2RsQpDMRDD/P/f2lWFUohKKDc9nI5vqSEYDSaIiwpo7ShrLVQAvHDkvYM8d7hwHq9vaqduh1P/Hw7I8aV6DKd6DKd6TKduh3P0EPjt8r/LXXfZofYHzEMiu4gpf+kAAAAASUVORK5CYII=");
@@ -18,6 +18,13 @@ html {
   margin-right: auto;
   width: 100%;
   max-width: 640px;
+}
+
+.cuirass-projectname {
+  margin: 0.5em 1em;
+  font-size: 3.6em;
+  font-family: 'Volkhov', serif;
+  text-align: center;
 }
 
 .cuirass-name {
@@ -44,4 +51,19 @@ html {
   padding: 0.5em 0 2em 0;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
   background: rgba(0, 0, 0, 0.75);
+}
+
+.cuirass-list {
+  box-shadow: 0 -1px 1px rgba(100, 100, 100, 0.1);
+  background: rgba(255, 255, 255, 0.75);
+}
+.cuirass-list > li > a {
+  display: block;
+  padding: 0.3em 0.5em;
+  color: inherit;
+  font-size: 2.4em;
+  text-decoration: none;
+}
+.cuirass-list > li + li {
+  border-top: 1px solid #EEE;
 }
